@@ -5,9 +5,7 @@
 A small repository partially following the [basic ScalaJS tutorial](https://www.scala-js.org/doc/tutorial/basic/)
 showcasing how to compile Scala code for the web. I'm writing this because I'm
 interested in edge computing and would prefer for computation to be outsourced
-to client devices to lower server costs.
-
-Developed with *IntelliJ IDEA*.
+to client devices to lower server costs. Built with *IntelliJ IDEA*.
 
 **Completed Goals:**
 

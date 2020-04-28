@@ -10,7 +10,7 @@
   "devDependencies": {},
   "scripts": {
     "dev-build": "sbt fastOptJS",
-    "build": "sbt fullOptJS",
+    "build": "bash build.sh",
     "test": "sbt test"
   },
   "author": "Ryan Fleck",
