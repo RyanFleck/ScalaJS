@@ -1,6 +1,6 @@
 html, button, textarea{
-    color: black;
-    background: antiquewhite;
+    color: #3b3733;
+    background: #faebd7;
     font-family: 'DejaVu Sans Mono', monospace;
     font-size: 18px;
 }
@@ -15,7 +15,19 @@ body{
 }
 
 button, textarea{
-    border: 1px solid black;
+    border: 1px solid #3b3733;
     border-radius: 4px;
     padding: 0.5em 1em;
+}
+
+hr{
+    margin: 1em 0em;
+    border-top: 2px dashed #ad9c84;
+    border-bottom: transparent;
+    background: transparent;
+}
+
+a{
+    color: #9b8dad;
+    text-decoration: none;
 }

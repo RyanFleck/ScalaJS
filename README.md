@@ -1,6 +1,8 @@
 # ScalaJS Test Project
 
 [![Build Status](https://travis-ci.org/RyanFleck/ScalaJS.svg?branch=master)](https://travis-ci.org/RyanFleck/ScalaJS)
+[![Scala.js](https://www.scala-js.org/assets/badges/scalajs-1.0.0.svg)](https://www.scala-js.org)
+
 
 A small repository partially following the [basic ScalaJS tutorial](https://www.scala-js.org/doc/tutorial/basic/)
 showcasing how to compile Scala code for the web. I'm writing this because I'm

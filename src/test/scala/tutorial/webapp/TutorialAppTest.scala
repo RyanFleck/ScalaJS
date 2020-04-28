@@ -13,11 +13,11 @@ object TutorialAppTest extends TestSuite {
   def tests = Tests {
 
     test("HelloWorld") {
-      assert(document.querySelectorAll("p").count(_.textContent == "Paragraphs generated using ScalaJS") == 1)
+      assert(document.querySelectorAll("h1").count(_.textContent == "ScalaJS Experiments") == 1)
     }
 
     test("ClickedMessage") {
-      def paragraphs = document.querySelectorAll("p").count(_.textContent == "Button clicked!")
+      def paragraphs = document.querySelectorAll("p").count(_.textContent.startsWith("Button clicked"))
 
       val button = document.querySelector("button").asInstanceOf[dom.html.Button]
       assert(button != null && button.textContent == "Add paragraph")
