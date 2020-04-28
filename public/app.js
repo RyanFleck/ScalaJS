@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
             var to_interpret = content[content.length - 1].substring(1);
             if (to_interpret != "") {
                 console.log("Evaluating " + to_interpret);
-                repl.value += "\nEvaluating \'" + to_interpret + "\'\n>";
+                repl.value += ScalaEval.doEval(to_interpret);
                 repl.scrollTop = repl.scrollHeight;
             }
 

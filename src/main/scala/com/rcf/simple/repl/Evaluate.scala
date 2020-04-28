@@ -10,8 +10,9 @@ import scala.scalajs.js.annotation.{JSExport, JSExportTopLevel}
 @JSExportTopLevel("ScalaEval")
 object Evaluate {
 
-  def doEval(s:String):Unit = {
-    println("Evaluating" + s)
+  @JSExport
+  def doEval(s:String) : String = {
+    "\nEvaluating '" + s + "' in Scala!\n>"
   }
 
   @JSExport

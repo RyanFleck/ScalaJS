@@ -17,14 +17,15 @@ to client devices to lower server costs. Built with *IntelliJ IDEA*.
 1. Write tests to verify DOM was manipulated
 1. Ensure *Travis CI* can run the tests.
 1. WebPack everything so I can use regular JavaScript, too.
+1. Remove WebPack because it doesn't play nice with ScalaJS and ES6. Investigate?
+1. Create a simple REPL
+1. Pass the contents of a textarea line
 
 
 **ToDo:**
 
-1. Create a simple REPL
 1. Send an XMLHTTPRequest to get some data
-1. Process the contents of a file
-1. Process the contents of a textarea
+1. Process the contents of a file or line
 1. Persist data in client-side WebDB
 1. Utilize a *module* from a different repository
 
