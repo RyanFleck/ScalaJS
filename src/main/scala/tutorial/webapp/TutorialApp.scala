@@ -5,7 +5,7 @@ package tutorial.webapp
 import org.scalajs.dom
 import org.scalajs.dom.{Element, document}
 
-import scala.collection.mutable.ListBuffer
+import scala.collection.mutable.{ArrayBuffer, ListBuffer}
 
 object TutorialApp {
 
@@ -13,6 +13,7 @@ object TutorialApp {
     println("Hello ScalaJS! Iteration 4.")
     document.addEventListener("DOMContentLoaded", { e: dom.Event => setupUI() })
   }
+
 
   def setupUI(): Unit = {
     val elems = new ListBuffer[Element]
@@ -57,6 +58,12 @@ object TutorialApp {
     button.addEventListener("click", { (e: dom.MouseEvent) => addClickedMessage() })
     elems += button
 
+    // Clear button
+    val button2 = document.createElement("button")
+    button2.textContent = "Clear section"
+    button2.addEventListener("click", { (e: dom.MouseEvent) => removeAllMessages() })
+    elems += button2
+
     val appendDiv = document.createElement("div")
     appendDiv.id = "append-test"
     elems += appendDiv
@@ -76,24 +83,35 @@ object TutorialApp {
       text = "Button clicked " + clicks + (if (clicks < 2) " time!" else " times!"))
   }
 
+  def howManyClicks(): Int = {
+    var count: Int = 1
+    applyToEachTagWithContent("p", "Button clicked ", (e)=>{ count = count + 1 })
+    count
+  }
+
+  def removeAllMessages() : Unit = {
+    applyToEachTagWithContent("p", "Button clicked ", (e) => {
+      e.parentNode.removeChild(e)
+    })
+  }
+
+  def applyToEachTagWithContent(tag: String, content: String, func: (Element) => Unit): Unit = {
+    val x = document.getElementsByTagName(tag)
+    val elemList = ArrayBuffer[Element]()
+    for (y <- 0 to (x.length - 1)) {
+      elemList += x.apply(y)
+    }
+    elemList.foreach(e => {
+      if (e.textContent.startsWith(content)){
+        func(e)
+      }
+    })
+  }
+
   def appendPar(targetNode: dom.Node, text: String): Unit = {
     val pNode = document.createElement("p")
     pNode.textContent = text
     targetNode.appendChild(pNode)
-  }
-
-  def howManyClicks(): Int = {
-    var count: Int = 1
-    val x = document.getElementsByTagName("p")
-    for (y <- 0 to (x.length - 1)) {
-      val z = x.apply(y)
-      if (z.textContent.startsWith("Button clicked")) {
-        count = count + 1
-      }
-    }
-    count
-
-    //document.querySelectorAll("p").count(_.textContent.startsWith("Button clicked"))
   }
 
 
