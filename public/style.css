@@ -1,0 +1,18 @@
+html, button, textarea{
+    color: black;
+    background: antiquewhite;
+    font-family: 'DejaVu Sans Mono', monospace;
+    font-size: 18px;
+    overflow-y: scroll;
+}
+
+body{
+    margin: 1em auto;
+    max-width: 600px;
+}
+
+button, textarea{
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 0.5em 1em;
+}
