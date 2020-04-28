@@ -7,6 +7,7 @@ showcasing how to compile Scala code for the web. I'm writing this because I'm
 interested in edge computing and would prefer for computation to be outsourced
 to client devices to lower server costs.
 
+Developed with *IntelliJ IDEA*.
 
 **Completed Goals:**
 
@@ -14,6 +15,7 @@ to client devices to lower server costs.
 1. Compile to JavaScript
 1. Manipulate DOM
 1. Write tests to verify DOM was manipulated
+1. Ensure *Travis CI* can run the tests.
 
 
 **ToDo:**
@@ -22,3 +24,15 @@ to client devices to lower server costs.
 1. Send an XMLHTTPRequest to get some data
 1. Process the contents of a file
 1. Process the contents of a textarea
+
+<br />
+
+**Test Example**
+
+```
+-------------------------------- Running Tests --------------------------------
++ tutorial.webapp.TutorialAppTest.HelloWorld 4ms  
++ tutorial.webapp.TutorialAppTest.ClickedMessage 4ms  
+[info] Tests: 2, Passed: 2, Failed: 0
+[success] Total time: 29 s, completed Apr 28, 2020, 6:41:18 PM
+```

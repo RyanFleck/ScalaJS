@@ -3,6 +3,9 @@ html, button, textarea{
     background: antiquewhite;
     font-family: 'DejaVu Sans Mono', monospace;
     font-size: 18px;
+}
+
+html{
     overflow-y: scroll;
 }
 
