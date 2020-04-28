@@ -32,3 +32,19 @@ a{
     color: #9b8dad;
     text-decoration: none;
 }
+
+#repl-window{
+    font-size: 0.9rem;
+    width: 100%;
+    height: 200px;
+    resize: none;
+    overflow-y: scroll;
+    color: greenyellow;
+    background: black;
+    border-radius: 0px;
+    outline: none;
+}
+
+#repl-window:focus{
+    outline: none;
+}

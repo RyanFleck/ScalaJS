@@ -41,6 +41,11 @@ object TutorialApp {
     header2.textContent = "Directing Text to Evaluation Class"
     elems += header2
 
+    val textarea1 = document.createElement("textarea")
+    textarea1.id = "repl-window"
+    elems += textarea1
+
+
     val container2 = document.createElement("ul")
     container2.id = "eval-test-container"
     elems += container2
