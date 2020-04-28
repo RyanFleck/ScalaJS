@@ -1,5 +1,7 @@
 # ScalaJS Test Project
 
+[![Build Status](https://travis-ci.org/RyanFleck/ScalaJS.svg?branch=master)](https://travis-ci.org/RyanFleck/ScalaJS)
+
 A small repository partially following the [basic ScalaJS tutorial](https://www.scala-js.org/doc/tutorial/basic/)
 showcasing how to compile Scala code for the web. I'm writing this because I'm
 interested in edge computing and would prefer for computation to be outsourced
