@@ -22,6 +22,8 @@ to client devices to lower server costs. Built with *IntelliJ IDEA*.
 1. Send an XMLHTTPRequest to get some data
 1. Process the contents of a file
 1. Process the contents of a textarea
+1. Persist data in client-side WebDB
+1. Utilize a *module* from a different repository
 
 <br />
 
