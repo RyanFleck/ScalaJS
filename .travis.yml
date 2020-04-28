@@ -1,2 +1,7 @@
 language: scala
 scala: 2.13.2
+
+script:
+  - nvm install node
+  - npm i
+  - sbt ++$TRAVIS_SCALA_VERSION test
