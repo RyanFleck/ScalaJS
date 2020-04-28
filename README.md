@@ -16,6 +16,7 @@ to client devices to lower server costs. Built with *IntelliJ IDEA*.
 1. Manipulate DOM
 1. Write tests to verify DOM was manipulated
 1. Ensure *Travis CI* can run the tests.
+1. WebPack everything so I can use regular JavaScript, too.
 
 
 **ToDo:**
