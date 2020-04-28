@@ -40,6 +40,10 @@ object TutorialApp {
     header2.textContent = "Directing Text to Evaluation Class"
     elems += header2
 
+    val container2 = document.createElement("ul")
+    container2.id = "eval-test-container"
+    elems += container2
+
     // Header for appending-section.
     elems += document.createElement("hr")
     val header3 = document.createElement("h3")

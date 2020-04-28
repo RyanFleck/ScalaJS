@@ -3,4 +3,4 @@
 echo "Building ScalaJS Experiments to public/"
 npm i
 sbt fullOptJS
-webpack
+cp target/scala-2.13/scalajs-opt.* public/

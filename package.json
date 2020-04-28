@@ -8,14 +8,15 @@
   "main": "index.js",
   "dependencies": {
     "jsdom": "^16.2.2",
-    "source-map-support": "^0.5.19",
-    "webpack-cli": "^3.3.11"
+    "source-map-support": "^0.5.19"
   },
   "devDependencies": {
-    "webpack": "^4.43.0",
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
     "path": "^0.12.7"
   },
   "scripts": {
+    "babel": "babel js -d public",
     "dev-build-scala": "sbt fastOptJS",
     "dev-build-js": "webpack",
     "dev": "webpack-dev-server",
