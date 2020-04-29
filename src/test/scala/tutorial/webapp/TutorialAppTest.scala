@@ -13,7 +13,7 @@ object TutorialAppTest extends TestSuite {
   def tests = Tests {
 
     test("HelloWorld") {
-      assert(document.querySelectorAll("h1").count(_.textContent == "ScalaJS Experiments") == 1)
+      assert(document.querySelectorAll("h3").count(_.textContent == "Appending Elements to the DOM") == 1)
     }
 
     test("ClickedMessage") {
