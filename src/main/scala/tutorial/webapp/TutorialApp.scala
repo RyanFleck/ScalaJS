@@ -25,11 +25,6 @@ object TutorialApp {
       document.body.appendChild(app)
     }
 
-    // Header
-    val header = document.createElement("h1")
-    header.textContent = "ScalaJS Experiments"
-    elems += header
-
     // First paragraph
     val intro = document.createElement("p")
     intro.textContent = "This web-page was generated using Scala, which was compiled to JavaScript with ScalaJS."
@@ -90,11 +85,19 @@ object TutorialApp {
 
   def howManyClicks(): Int = {
     var count: Int = 1
-    applyToEachTagWithContent("p", "Button clicked ", (e)=>{ count = count + 1 })
+    applyToEachTagWithContent("p", "Button clicked ", (e) => {
+      count = count + 1
+    })
     count
   }
 
-  def removeAllMessages() : Unit = {
+  def appendPar(targetNode: dom.Node, text: String): Unit = {
+    val pNode = document.createElement("p")
+    pNode.textContent = text
+    targetNode.appendChild(pNode)
+  }
+
+  def removeAllMessages(): Unit = {
     applyToEachTagWithContent("p", "Button clicked ", (e) => {
       e.parentNode.removeChild(e)
     })
@@ -107,16 +110,10 @@ object TutorialApp {
       elemList += x.apply(y)
     }
     elemList.foreach(e => {
-      if (e.textContent.startsWith(content)){
+      if (e.textContent.startsWith(content)) {
         func(e)
       }
     })
-  }
-
-  def appendPar(targetNode: dom.Node, text: String): Unit = {
-    val pNode = document.createElement("p")
-    pNode.textContent = text
-    targetNode.appendChild(pNode)
   }
 
 

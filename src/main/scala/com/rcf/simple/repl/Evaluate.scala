@@ -11,24 +11,24 @@ import scala.scalajs.js.annotation.{JSExport, JSExportTopLevel}
 object Evaluate {
 
   @JSExport
-  def doEval(s:String) : String = {
+  def doEval(s: String): String = {
     "\nEvaluating '" + s + "' in Scala!\n>"
   }
 
   @JSExport
-  def sayHello() : Unit = {
+  def sayHello(): Unit = {
     println("Hello, JavaScript! This is a Scala function!")
   }
 
   @JSExport
-  def returnText(text : String) : String = {
+  def returnText(text: String): String = {
     val y = "Processing '" + text + "' in Scala..."
     println(y)
     y
   }
 
   @JSExport
-  def readyUp() : Boolean = {
+  def readyUp(): Boolean = {
     true
   }
 
