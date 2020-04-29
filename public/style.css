@@ -12,6 +12,7 @@ html{
 body{
     margin: 1em auto;
     max-width: 600px;
+    padding: 5px;
 }
 
 button, textarea{
@@ -34,8 +35,12 @@ a{
 }
 
 #repl-window{
+
     font-size: 0.9rem;
-    width: 100%;
+    width: 90%;
+    padding: 1em;
+    margin: 0.1em;
+
     height: 200px;
     resize: none;
     overflow-y: scroll;
