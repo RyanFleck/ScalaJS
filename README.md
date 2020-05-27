@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/RyanFleck/ScalaJS.svg?branch=master)](https://travis-ci.org/RyanFleck/ScalaJS)
 [![Scala.js](https://www.scala-js.org/assets/badges/scalajs-1.0.0.svg)](https://www.scala-js.org)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FRyanFleck%2FScalaJS.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FRyanFleck%2FScalaJS?ref=badge_shield)
 
 
 A small repository partially following the [basic ScalaJS tutorial](https://www.scala-js.org/doc/tutorial/basic/)
@@ -40,3 +41,6 @@ to client devices to lower server costs. Built with *IntelliJ IDEA*.
 [info] Tests: 2, Passed: 2, Failed: 0
 [success] Total time: 29 s, completed Apr 28, 2020, 6:41:18 PM
 ```
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FRyanFleck%2FScalaJS.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FRyanFleck%2FScalaJS?ref=badge_large)
